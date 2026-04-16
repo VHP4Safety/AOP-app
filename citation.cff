@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+type: software
+title: AOP-Suite
+version: v0.0.1
+date-released: 2026-04-16
+license: MIT
+
+abstract: >
+  AOP-Suite is a web-based tool for building, visualizing, and analyzing Adverse Outcome Pathway (AOP) networks. 
+  It serves as an extended user interface for pyAOP and the AOP-Wiki RDF SPARQL endpoint. 
+  The AOP Network Builder allows to build AOP Networks: query AOP Wiki RDF data and construct biological pathway networks;
+  integrate Multiple Data Sources by combining data from AOP Wiki, UniProt, Ensembl, Bgee, OpenTargets, and more; and
+  provides an interactive Visualization with Cytoscape.js for dynamic network visualization with customizable layouts.
+  Users can add Bgee gene expression data, QSPR predictions, and GO process annotations.
+
+
+authors:
+  - family-names: Millán Acosta
+    given-names: Javier
+    orcid: https://orcid.org/0000-0002-4166-7093
+
+repository-code: https://github.com/VHP4Safety/AOP-Suite/
+url: https://aopsuite.cloud.vhp4safety.nl/
+
+keywords:
+  - biomedical data integration
+  - knowledge graphs
+  - graph databases
+  - adverse outcome pathways
+  - cytoscape
+  - data harmonization
+
