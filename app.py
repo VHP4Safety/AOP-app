@@ -94,4 +94,7 @@ def update_session():
     return jsonify({'success': True, 'data': sessions[session_id]})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    # debug must stay False here: this entrypoint is what the container runs in
+    # production, and debug=True exposes the Werkzeug debugger console (remote code
+    # execution) on the public interface. Set FLASK_DEBUG=1 locally instead.
+    app.run(host="0.0.0.0", port=5000, debug=os.environ.get("FLASK_DEBUG") == "1")
